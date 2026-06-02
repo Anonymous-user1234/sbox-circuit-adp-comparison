@@ -1,0 +1,14 @@
+# Replace this path with your local Nangate 45nm liberty file.
+read_verilog AES10_BPD_18D_6AD_32NLs_93XORs.v
+hierarchy -top AES10_BPD_18D_6AD_32NLs_93XORs
+
+proc
+opt
+techmap
+opt
+
+abc -liberty /path/to/NangateOpenCellLibrary_typical.lib
+
+clean
+stat -liberty /path/to/NangateOpenCellLibrary_typical.lib
+write_verilog -noattr AES10_BPD_18D_6AD_32NLs_93XORs_mapped.v

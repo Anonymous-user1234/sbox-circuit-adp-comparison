@@ -1,0 +1,14 @@
+# Replace this path with your local Nangate 45nm liberty file.
+read_verilog AES10v2_H23_XORS82.v
+hierarchy -top AES10v2_H23_XORS82
+
+proc
+opt
+techmap
+opt
+
+abc -liberty /path/to/NangateOpenCellLibrary_typical.lib
+
+clean
+stat -liberty /path/to/NangateOpenCellLibrary_typical.lib
+write_verilog -noattr AES10v2_H23_XORS82_mapped.v

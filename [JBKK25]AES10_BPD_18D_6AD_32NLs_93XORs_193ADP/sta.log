@@ -1,0 +1,47 @@
+OpenSTA 3.1.0 GITDIR-NOT Copyright (c) 2026, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Startpoint: x[5] (input port clocked by clk)
+Endpoint: y[0] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock clk (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 v input external delay
+   0.0000    0.0000 v x[5] (in)
+   0.0658    0.0658 v _130_/ZN (XNOR2_X1)
+   0.0961    0.1619 ^ _131_/ZN (XNOR2_X1)
+   0.0572    0.2191 ^ _165_/ZN (XNOR2_X1)
+   0.0508    0.2699 ^ _166_/ZN (XNOR2_X1)
+   0.0235    0.2933 v _170_/ZN (AOI21_X1)
+   0.0841    0.3775 v _173_/ZN (OR3_X1)
+   0.0401    0.4176 v _174_/ZN (AND2_X1)
+   0.0520    0.4696 ^ _183_/ZN (OAI221_X1)
+   0.0856    0.5553 ^ _185_/Z (XOR2_X1)
+   0.0466    0.6019 v _188_/ZN (OAI211_X1)
+   0.0476    0.6495 v _190_/ZN (AND3_X1)
+   0.0733    0.7228 ^ _216_/ZN (NOR3_X1)
+   0.0541    0.7770 ^ _230_/ZN (XNOR2_X1)
+   0.0652    0.8421 ^ _232_/Z (XOR2_X1)
+   0.0430    0.8851 ^ _236_/Z (XOR2_X1)
+   0.0000    0.8851 ^ y[0] (out)
+             0.8851   data arrival time
+
+  10.0000   10.0000   clock clk (rise edge)
+   0.0000   10.0000   clock network delay (ideal)
+   0.0000   10.0000   clock reconvergence pessimism
+   0.0000   10.0000   output external delay
+            10.0000   data required time
+-------------------------------------------------------------
+            10.0000   data required time
+            -0.8851   data arrival time
+-------------------------------------------------------------
+             9.1149   slack (MET)
+
+
