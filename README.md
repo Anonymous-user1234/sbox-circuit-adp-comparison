@@ -1,6 +1,5 @@
 # S-box Circuit Synthesis and ADP Comparison
-
-This repository contains the AES S-box circuits and synthesis logs used for the ADP comparison.
+This repository contains the AES S-box circuits, synthesis scripts, and logs for reproducing the ADP comparison of two selected circuits: our circuit with the lowest ADP and the JBKK25 circuit with the lowest ADP.
 
 ## Contents
 
