@@ -1,13 +1,14 @@
 # S-box Circuit Synthesis and ADP Comparison
-This repository contains the AES S-box circuits, synthesis scripts, and logs for reproducing the ADP comparison of two selected circuits: our circuit with the lowest ADP and the JBKK25 circuit with the lowest ADP.
+This repository provides the files needed to reproduce the ADP comparison between our lowest-ADP AES S-box circuit and the lowest-ADP circuit selected from [JBKK25].
 
 ## Contents
+Each directory contains the circuit, scripts, and logs for one reproduced ADP result.
 
-- `[Ours]AES10v2_23D_5AD_32NLs_82XORS_153ADP/`  
-  Our best-ADP AES S-box circuit with 82 XORs, 32 ANDs, depth 23, and AD=5.
+- `[Ours]AES10v2_23D_5AD_32NLs_82XORs_153ADP/`  
+  Our lowest-ADP result: 82 XORs, 32 ANDs, depth 23, and AD=5.
 
 - `[JBKK25]AES10_BPD_18D_6AD_32NLs_93XORs_193ADP/`  
-  The best-ADP AES S-box circuit from [JBKK25], with 93 XORs, 32 ANDs, depth 18, and AD=6.
+  The lowest-ADP result among the circuits reported in [JBKK25]: 93 XORs, 32 ANDs, depth 18, and AD=6.
 
 Each folder contains:
 
